@@ -2,8 +2,7 @@ package com.hnqc.matcher;
 
 public class MatcherResult {
     private int start;
-    private int end;
-    private CharSequence keyword;
+    private String keyword;
 
     public int getStart() {
         return start;
@@ -13,19 +12,12 @@ public class MatcherResult {
         this.start = start;
     }
 
-    public int getEnd() {
-        return end;
-    }
 
-    public void setEnd(int end) {
-        this.end = end;
-    }
-
-    public CharSequence getKeyword() {
+    public String getKeyword() {
         return keyword;
     }
 
-    public void setKeyword(CharSequence keyword) {
+    public void setKeyword(String keyword) {
         this.keyword = keyword;
     }
 
@@ -33,7 +25,6 @@ public class MatcherResult {
     public String toString() {
         return "result{" +
                 "start=" + start +
-                ", end=" + end +
                 ", keyword=" + keyword +
                 '}';
     }
