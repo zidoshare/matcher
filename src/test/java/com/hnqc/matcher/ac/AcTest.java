@@ -1,7 +1,6 @@
 package com.hnqc.matcher.ac;
 
 import com.hnqc.matcher.MatcherResult;
-import com.hnqc.matcher.ac.lk.Ac;
 import org.junit.Assert;
 import org.junit.Test;
 
