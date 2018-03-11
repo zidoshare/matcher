@@ -1,5 +1,20 @@
 package com.hnqc.matcher;
 
-public class Matcher {
+import com.hnqc.matcher.ac.lk.Ac;
 
+import java.util.List;
+
+/**
+ * 匹配工具类
+ *
+ * @author zido
+ */
+public class Matcher {
+    public static KMP create(String mode) {
+        return new KMP(mode);
+    }
+
+    public static Ac create(List<String> modes) {
+        return new Ac(modes);
+    }
 }

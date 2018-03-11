@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * kmp算法
+ *
+ * @author zido
+ */
 public class KMP {
 
     //回文串数组，纪录移动位置

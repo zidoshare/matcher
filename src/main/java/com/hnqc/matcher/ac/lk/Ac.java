@@ -1,9 +1,14 @@
-package com.hnqc.matcher.ac;
+package com.hnqc.matcher.ac.lk;
 
 import com.hnqc.matcher.MatcherResult;
 
 import java.util.*;
 
+/**
+ * Ac自动机算法
+ *
+ * @author zido
+ */
 public class Ac {
     private int lastState = 1;
     /**
