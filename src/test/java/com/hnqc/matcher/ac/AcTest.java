@@ -37,16 +37,16 @@ public class AcTest {
         modes.add("c");
         Ac ac = new Ac(modes);
         List<MatcherResult> result = ac.findAll("bcabcfcnfgh");
-        Assert.assertTrue(result.size() > 0);
+        Assert.assertEquals(6,result.size());
     }
     @Test
     public void testFindAll2(){
         List<String> modes = new ArrayList<>();
-        modes.add("abc");
-        modes.add("c");
-        modes.add("bc");
+        modes.add("一个人");
+        modes.add("人");
+        modes.add("一个");
         Ac ac = new Ac(modes);
-        List<MatcherResult> result = ac.findAll("cabc");
-        Assert.assertTrue(result.size() > 0);
+        List<MatcherResult> result = ac.findAll("人一个人");
+        Assert.assertEquals(4,result.size());
     }
 }
